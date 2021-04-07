@@ -19,7 +19,6 @@ de cada usuario y a sus gustos en el aspecto estético.>
   <link href="/stylesheets/home.scss" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Chicle&family=Dela+Gothic+One&family=Faster+One&family=Goldman:wght@400;700&family=Roboto&family=Roboto+Condensed:ital,wght@0,700;1,700&family=Spicy+Rice&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
@@ -29,7 +28,7 @@ de cada usuario y a sus gustos en el aspecto estético.>
   <img src="/assets/logo2.jpg" alt="logotipo" class="logo">
 
 
-
+<!-----NAV BAR----->
   <input type="checkbox" id="open-nav"> <!-- al tocarlo, se selecciona la checkbox.en css escribo#abre-nav:checked ~.main-nav  le digo asi que le de estilo al HERMANO de abre nav que es .main-nav. -->
 
   <label for="open-nav" class="toggle-nav">
@@ -81,73 +80,139 @@ de cada usuario y a sus gustos en el aspecto estético.>
       </div>
     </li>
   </ul>
-
 </div>
 
 <!-----ABOUT QMP----->
 <div id="about">
   <figure class="about-image">
     <img src="/assets/about-text-1.jpg" alt="about-text-1">
-
   </figure>
-
-  <!-- Hay que todavia arreglar h2 y h3, agregarle un margin o algo-->
   <section class="about-text">
     <h2>Vestite según el tiempo</h2>
     <h3>Y teniendo en cuenta tus gustos </h3>
     <a>ver más</a>
-
   </section>
 
 </div>
 
+<!-----MORE ABOUT----->
+<div id="about-2">
+  <div class="inner-container">
+    <h2>Sobre nosotros</h2>
+    <figure class="about-section-image">
+      <img src="/assets/about-text-4.jpg" alt="about-text-4">
+    </figure>
+    <section class="text-about">
+      <p>
+        Somos una empresa pensada en facilitarte la elección de tu <strong>vestimenta</strong> día a día, para que puedas siempre brindar la <strong>mejor versión</strong> de vos mismo.
+        Con las prendas de tu guardarropas, generamos diferentes opciones para que, <strong>según tus gustos, el clima y el tipo de evento</strong>, puedas estar impecable y causar una excelente impresión.
+      </p>
+    </section>
+  </div>
+</div>
+
+<!-- TYPES OF WEATHERS -->
+
+<div id="weather">
+  <div class="container">
+    <h2 class="weather-title">Según el clima</h2>
+    <ul class="weather-list">
+      <li>
+        <a href="" target="_blank">
+          <img src="/assets/weather1.jpg" alt="sunny-img">
+          <div class="weather-text">Soleado</div>
+        </a>
+      </li>
+      <li>
+        <a href="" target="_blank">
+          <img src="/assets/weather2.jpg" alt="rainy-img">
+          <div class="weather-text">Lluvioso</div>
+        </a>
+      </li>
+      <li>
+        <a href="" target="_blank">
+          <img src="/assets/weather3.jpg" alt="snow-img">
+          <div class="weather-text">Nieve</div>
+        </a>
+      </li>
+      <li>
+        <a href="" target="_blank">
+          <img src="/assets/weather4.jpg" alt="beach-img">
+          <div class="weather-text">Playa</div>
+        </a>
+      </li>
+      <li>
+        <a href="" target="_blank">
+          <img src="/assets/weather5.jpg" alt="mountain-img">
+          <div class="weather-text">Montaña</div>
+        </a>
+      </li>
+      <li>
+        <a href="" target="_blank">
+          <img src="/assets/weather6.jpg" alt="skii-img">
+          <div class="weather-text">Esquí</div>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<!-- TEAM -->
 <div id="team">
 
-  <!-- TEAM -->
-  <section class="vip-students" c>
+  <section class="vip-students">
     <h2>Nuestro equipo</h2>
+    <p>Somos una empresa de amigos que nació como un microemprendimiento y ahora ayudamos a cientos de clientes en todo el país.
+      Estamos a tu servicio.</p>
     <section class="students-all">
       <article class="student">
-
         <img src="/assets/student1.png" alt="student-1">
         <h3>Melisa</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex.</p>
-
+        <p>Directora de información y tecnología. Responsable principal de del desarrollo, optimización y seguridad en el área IT.</p>
       </article>
-
       <article class="student">
         <img src="/assets/student2.png" alt="student-2">
         <h3>César</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex.</p>
-
+        <p>Director de finanzas. Jefe del equipo responsable de las inversiones y financiaciones de la empresa.</p>
       </article>
-
       <article class="student">
         <img src="/assets/student3.png" alt="student-3">
         <h3>Stefano</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex.</p>
-
+        <p>Director ejecutivo de la empresa. Propietario, fundador y rostro de QuéMePongo desde 2020.</p>
       </article>
-
       <article class="student">
         <img src="/assets/student4.png" alt="student-4">
         <h3>Uziel</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut recusandae eaque debitis sint necessitatibus, officia ex.</p>
-
+        <p>Director de marketing y ventas. Líder estratégico del equipo encargado del mercadeo y publicidad.</p>
       </article>
     </section>
-
-
   </section>
-
-
-
 </div>
-<div id="contact"></div>
+
+<!-----CONTACT----->
+<div id="contact">
+  <div class="contact-container">
+    <h2 class="title-contact">Contactanos</h2>
+    <div class="form">
+      <div class="form-items">
+        <input type="text" class="input" placeholder="Nombre">
+      </div>
+      <div class="form-items">
+        <input type="text" class="input" placeholder="Email">
+      </div>
+      <div class="form-items">
+        <textarea class="input message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+      </div>
+      <div class="btn-contact">
+        Enviar
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-----FOOTER----->
 <footer class="main-footer">
-
   <h2>SEGUINOS:</h2>
   <ul class="footer-list">
     <li>
@@ -155,32 +220,26 @@ de cada usuario y a sus gustos en el aspecto estético.>
         <i class="fa fa-youtube-play" aria-hidden="true"></i>
       </a>
     </li>
-
     <li>
       <a>
         <i class="fa fa-linkedin" aria-hidden="true"></i>
-
       </a>
     </li>
-
     <li>
       <a>
         <i class="fa fa-instagram"></i>
       </a>
     </li>
-
     <li>
       <a>
         <i class="fa fa-twitter" aria-hidden="true"></i>
       </a>
     </li>
   </ul>
-
   <div class="footer-text">
     <a>Términos y Condiciones</a>
     <a>Políticas de Privacidad</a>
   </div>
-
   <p> © 2021, QueMePongo </p>
 </footer>
 
@@ -233,9 +292,7 @@ de cada usuario y a sus gustos en el aspecto estético.>
     });
 
 </script>
-
 </body>
-
 </html>
 
 

@@ -1,381 +1,531 @@
-// Place all the styles related to the Home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
-
-*{
-  box-sizing: border-box;
-}
-body{
-  margin: 0;
-  font-family: 'Raleway', sans-serif;
-  background-color: #001938;
-  font-size: 10px;
-
-}
-ul,ol{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-a{
-  text-decoration: none;
-}
-img{
-  width: 100%;
-}
-
-
-
-.main-header{
-  display: flex;
-  background-color: #d4ece4;
-}
-
-
-
-.logo
-{
-  width: 100px;
-  //margin:15px 30px;
-
-}
-
-.main-nav{
-  width: 0;
-  height: 100vh;
-  position: fixed;
-  left: 0;
-  top: 0;
-  background-color: #d4ece4;
-  overflow: hidden;
-  transition: 300ms;
-  font-size: 1em;
-  z-index: 1000;
-  font-weight: bold;
-  font-family: 'Goldman', cursive;
-}
-.main-nav a{
-  display: block;
-  color: #f42c44;
-  font-size: 1.4em;
-  text-align: center;
-  padding: 1em 0;
-  border-bottom: solid 1.5px #001938;
-  text-transform: uppercase;
-
-}
-#open-nav:checked~.main-nav{
-  width: 75vw;
-  display: block;
-
-
-}
-#open-nav{
-  display: none;
-  position: fixed;
-
-}
-
-.close{
-  color: #f42c44;
-  font-size: 3em;
-  position: absolute;
-  right: 10px;
-  top: 5px;
-
-
-}
-.toggle-nav{
-  font-size: 4em;
-  color: #f42c44;
-  flex: 1 1 0%;
-  justify-content: flex-end;
-  display: flex;
-  margin: auto 20px;
-}
-.main-banner{
-
-  margin: auto;
-  position: relative;
-  overflow: hidden;
-  line-height: 0;
-
-}
-
-.banner-text{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  margin: auto;
-  width: 100%;
-  height: 100%;
-  max-width: 1200px;
-}
-
-.banner-text p {
-  color: #F9f778;
-  text-shadow: 2px 4px 2px #f54f22;
-  font-size: 3em;
-  line-height: 1.3;
-  text-align: center;
-  padding: 0 15px;
-  margin: 0;
-  font-family: 'Dela Gothic One', cursive;
-  text-transform: uppercase;
-}
-
-.rslides {
-
-  position: relative;
-  list-style: none;
-  overflow: hidden;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-
-}
-
-.rslides li {
-
-  -webkit-backface-visibility: hidden;
-  position: absolute;
-  display: none;
-  width: 100%;
-  left: 0;
-  top: 0;
-
-}
-
-.rslides li:first-child {
-  position: relative;
-  display: block;
-  float: left;
-
-}
-
-.rslides img {
-
-  display: block;
-  height: 100%;
-  float: left;
-  width: 100%;
-  border: 0;
-
-}
-
-#about{
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  flex-wrap: wrap;
-  background-color: #ece3ff;
-
-}
-
-.about-text{
-  order: -1;
-  margin: auto 120px;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  margin: 20px 30px;
-
-}
-.about-text h2{
-  font-size: 40px;
-  color: #8666cc;
-  font-family: 'Goldman', cursive;
-
-}
-
-.about-text h3{
-  font-size: 20px;
-  font-style: italic;
-  color: black;
-
-}
-
-.about-text a{
-  display: inline-block;
-  color: white;
-  background-color: black;
-  padding: 15px ;
-  font-size: 15px;
-  text-transform: uppercase;
-  margin: auto;
-  text-align: center;
-}
-
-.about-image{
-
-}
-
-.students-all{
-  margin: 15px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  flex-wrap: wrap;
-
-}
-
-.vip-students{
-  background-color: #001938;
-}
-
-.vip-students h2{
-  font-size: 50px;
-  text-transform: uppercase;
-  text-align: center;
-  color:white;
-  font-family: 'Dela Gothic One', cursive;
-}
-
-.vip-students h3{
-  font-size: 40px;
-  text-transform: uppercase;
-  text-align: center;
-  font-style: oblique;
-  text-align: left;
-  color: #f7c5ff;
-  font-family: 'Roboto', sans-serif;
-}
-
-.vip-students p{
-  color: white;
-  font-family: 'Roboto', sans-serif;
-}
-
-.student{
-  padding: 10px 15px;
-  text-align:center;
-  margin: 10px;
-}
-.student p{
-  text-align: left;
-  font-size: 20px;
-}
-
-
-//BOTON VER MAS(quiza se puede usar el estilo para otro btn)
-//.student a {
-//  display: inline-block;
-//  color: white;
-//  background-color: rgb(65, 65, 65);
-//  padding: 5px;
-//  margin: auto;
-//  text-align: center;
-//}
-.main-footer{
-  background-color: #060506;
-  position: relative;
-  margin: auto;
-  padding: 30px 0;
-  text-align: center;
-  letter-spacing: 0.05em;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-.main-footer h2{
-  text-align: left;
-  margin: 0 10px;
-  padding-bottom: 15px;
-  color: white;
-  font-weight: bold;
-  letter-spacing: 0.15em;
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: #001938;
+    font-size: 10px;
   }
 
-.main-footer li {
-  text-align: center;
-  margin: 10px;
-  font-size: 2em;
-  display: inline-block;
-  border-radius: 50%;
-  background-color: #c99bc6;
-  padding:0 8px;
-  justify-content: space-between;
-  color: #060506;
+  ul,ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .main-header {
+    display: flex;
+    background-color: #d4ece4;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
+  .main-nav {
+    width: 0;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #d4ece4;
+    overflow: hidden;
+    transition: 300ms;
+    font-size: 1em;
+    z-index: 1000;
+    font-weight: bold;
+    font-family: 'Goldman', cursive;
+  }
+
+  .main-nav a {
+    display: block;
+    color: #f42c44;
+    font-size: 1.4em;
+    text-align: center;
+    padding: 1em 0;
+    border-bottom: solid 1.5px #001938;
+    text-transform: uppercase;
+
+  }
+
+  #open-nav:checked~.main-nav {
+    width: 75vw;
+    display: block;
+  }
+
+  #open-nav {
+    display: none;
+    position: fixed;
+  }
+
+  .close {
+    color: #f42c44;
+    font-size: 3em;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+
+  }
+  .toggle-nav {
+    font-size: 4em;
+    color: #f42c44;
+    flex: 1 1 0%;
+    justify-content: flex-end;
+    display: flex;
+    margin: auto 20px;
+  }
+
+  .main-banner{
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .banner-text {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+  }
+
+  .banner-text p {
+    color: #F9f778;
+    text-shadow: 2px 4px 2px #f54f22;
+    font-size: 3em;
+    line-height: 1.3;
+    text-align: center;
+    padding: 0 15px;
+    margin: 0;
+    font-family: 'Dela Gothic One', cursive;
+    text-transform: uppercase;
+  }
+
+  .rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .rslides li {
+
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  .rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+  }
+
+  .rslides img {
+    display: block;
+    height: 100%;
+    float: left;
+    width: 100%;
+    border: 0;
+  }
+
+  #about {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #ece3ff;
+  }
+
+  .about-image {
+    margin: 50px 30px;
+  }
+
+  .about-text {
+    order: -1;
+    margin: auto ;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 40px;
+    color: #8666cc;
+    font-family: 'Goldman', cursive;
+  }
+
+  .about-text h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #001938;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  .about-text a {
+    display: inline-block;
+    color: white;
+    background-color: #001938;
+    padding: 15px ;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 10px auto;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  }
 
 
-}
+  //MORE ABOUT
+  #about-2 {
+    background-color: #f7c5ff;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: url("/assets/bcg-about-us-1.jpg");
 
-.main-footer a{
-  display: block;
-  color: #060506;
-  text-transform: uppercase;
-  margin: 5px 0px;
-}
+  }
 
-.footer-text{
-  display: flex;
-  justify-content: center;
-}
+  .inner-container {
+    float: right;
+    margin: auto 25px;
+    background-size: contain;
+    color: #001938;
+  }
 
-.footer-text a{
-  color: black;
-  margin: 15px 10px;
-  text-align: center;
-  text-transform: none;
-  color: white;
+  .inner-container h2 {
+    margin-bottom: 30px;
+    font-size: 2.8em;
+    order: -1;
+    font-family: 'Dela Gothic One', cursive;
+    text-transform: uppercase;
+  }
 
-}
+  .about-section-image {
+    margin: 30px 20px;
+  }
 
-.main-footer p{
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  color: white;
-}
+  .text-about {
+    font-size: 2em;
+    line-height: 30px;
+    text-align: justify;
+    margin: 35px 20px;
+  }
+
+  //WEATHERS
+
+  #weather {
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 90px;
+    font-family: 'Goldman', cursive;
+    background-color: #8666cc;
+  }
+
+  .weather-title {
+    font-size: 4em;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    color: #d4ece4;
+    font-family: 'Dela Gothic One', cursive;
+  }
+
+  .weather-list li a {
+    display: block;
+    position: relative;
+    line-height: 0;
+    color: white;
+  }
+
+  .weather-text {
+    font-size: 4em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px #000000;
+  }
 
 
+  //TEAM
 
+  #team {
+    background-image: url("/assets/bcg-about-us-2.jpg");
+    background-size:cover;
+    width: 100%;
+  }
+
+  .students-all {
+    margin: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+  }
+
+  .vip-students h2 {
+    font-size: 3em;
+    text-transform: uppercase;
+    text-align: center;
+    color:white;
+    font-family: 'Dela Gothic One', cursive;
+    margin-top: 0;
+    padding-top: 1.2em;
+    margin-right:15px;
+    margin-left: 15px;
+  }
+
+  .vip-students h3 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-style: oblique;
+    text-align: left;
+    color: #f7c5ff;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px #001938;
+  }
+
+  .vip-students p {
+    color: #001938;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .student {
+    padding: 10px 15px;
+    text-align:center;
+    margin: 10px;
+  }
+
+  .student p {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 6px;
+  }
+
+
+  //CONTACTO
+
+  #contact {
+    background: #f42c44;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-family: 'Goldman', cursive;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .contact-container {
+    margin: 15px;
+    position: relative;
+  }
+
+  .title-contact {
+    color: #d4ece4;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    margin-bottom: 25px;
+    font-size: 2.3em;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 40px;
+  }
+
+  .form-items .input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: white;
+    outline: none;
+    border: groove 0.2em #d4ece4;
+    border-radius: 2em;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+
+
+  }
+  .form-items .input.message {
+    height: 125px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    resize: none;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+  }
+
+  .btn-contact {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+    text-align: center;
+    color: #001938;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 2em;
+    background-color: #d4ece4;
+    border: groove 0.2em #d4ece4;
+    font-family: 'Goldman', cursive;
+  }
+
+  //FOOTER
+
+  .main-footer {
+    background-color: #060506;
+    position: relative;
+    margin: auto;
+    padding: 30px 0;
+    text-align: center;
+    letter-spacing: 0.05em;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  .main-footer h2 {
+    text-align: left;
+    margin: 0 10px;
+    padding-bottom: 15px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+  }
+
+  .main-footer li {
+    text-align: center;
+    margin: 10px;
+    font-size: 2em;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #c99bc6;
+    padding:0 8px;
+    justify-content: space-between;
+    color: #060506;
+  }
+
+  .main-footer a {
+    display: block;
+    color: #060506;
+    text-transform: uppercase;
+    margin: 5px 0px;
+  }
+
+  .footer-text {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-text a {
+    color: black;
+    margin: 15px 10px;
+    text-align: center;
+    text-transform: none;
+    color: white;
+  }
+
+  .main-footer p {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    color: white;
+  }
 
 
 /*como minimo el viewport tiene 650px de ancho*/
 @media (min-width:650px) {
 
-
-  .banner{
+  .banner {
     display:block; /*para sacar el display none, puedo poder cualquier otro valor. pongo block porque quiero que se comporte como un bloque*/
     margin: 30px 0.83%;/*top-bottoms/right-left*/
   }
 
+  .banner-text p {
+    font-size: 4em;
+  }
 
   #about{
     flex-direction: row;
     justify-content: center;
   }
-  .about-image{
+  .about-image {
     margin: 70px 0;
   }
 
-  .students-all {
+  .about-section {
+    padding: 0;
+  }
+  .inner-container {
+    padding: 60px;
+  }
 
+  .weather-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: stretch;
     flex-direction: row;
   }
 
-  .student{
+  .weather-list li {
+    width: 50%;
+  }
+
+  .students-all {
+    flex-direction: row;
+  }
+
+  .student {
     padding: 0;
     float: left;
     margin: 0 0.83% 20px;
     width: 48.33%;/* se suma a esto 0.83% de ambos margenes laterales*/
-
   }
-  /*para que el footer se me vaya para abajo tengo dos opciones una es al main footer ponerle
-  clear:both otra es a .vip-product ponerle overflow:hidde*/
-  /*.main-footer{
-    clear: both;
-    background-color: rgb(232, 31, 31);
-  border-radius: 15px 15px 0 0;
 
-  }*/
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
+  }
 
+  .title-contact {
+    margin: 100px auto;
+    padding-left: auto;
+  }
 
-  .main-footer{
+  .form {
+    width: 58%;
+  }
+
+  .main-footer {
     text-align: center;
     padding: 30px 0;
     clear: both;
@@ -383,7 +533,6 @@ img{
 
   .main-footer li {
     display: inline-block;
-    border-right:solid 1px white;
     padding: 0 15px;
     margin: 57px;
   }
@@ -391,23 +540,23 @@ img{
   .main-footer li:last-child {
     border-right: none;
   }
-  .main-footer a{
+  .main-footer a {
     border-bottom: none;
     margin: 12px 0px;
 
   }
 
-  .footer-text a{
+  .footer-text a {
     color: white;
     margin: 15px;
     text-align: center;
     font-size: 12px;
-
-
   }
 }
 
+
 @media(min-width:1200px) {
+
   .container {
     max-width: 1200px;
     margin: auto; /*lo centro de manera horizontal*/
@@ -430,37 +579,73 @@ img{
     margin: 0 0 1% 4%; /*top y bottom -right y left*/
     font-size: 15px;
   }
+
   .main-nav a {
     background-color: transparent;
     border: none;
     color: #f42c44;
     font-family: 'Goldman', cursive;
   }
+
   .close, .toggle-nav {
     display: none; /* debo cancelar lo que estaba antes*/
-
   }
 
-  .banner-text{
-    font-size: 35px;
+  .banner-text {
+    font-size: 2em;
   }
-  .about-text{
-  margin: auto;
+  .about-text {
+    margin: auto;
   }
 
- .about-image{
-   height: 100%;
- }
+  .about-image {
+    height: 100%;
+  }
 
+  #about-2 {
+  align-items: flex-start;
+  }
+
+  #about-2 h2 {
+    margin-left: 40px;
+  }
+
+  .inner-container {
+    padding:15px;
+  }
+
+  .about-section-image {
+    margin: 30px 40px;
+    width: 45%;
+    float: left;
+  }
+
+  .text-about {
+    margin: 50px 0px;
+    padding: 60px;
+    line-height: 40px;
+  }
+
+  .weather-list li {
+    width: 33.33%;
+  }
   .students-all {
     justify-content: space-around;
   }
 
-  .student{
+  .student {
     padding: 20px 30px;
     width: 20%;
-
   }
+
+  .form {
+    width: 61%;
+  }
+
+  .title-contact {
+    font-size: 3em;
+  }
+
 
   .main-footer ul {
     display: flex;
